@@ -4,10 +4,18 @@ public class Mover : MonoBehaviour
 {  
     public float moveSpeed = 10f;
 
-    void Update()
+    Rigidbody rb = null;
+
+    void Start()
     {
-        float xValue = Input.GetAxis("Horizontal") * Time.deltaTime * moveSpeed;
-        float zValue = Input.GetAxis("Vertical") * Time.deltaTime * moveSpeed;
-        this.transform.Translate(xValue, 0f, zValue);
+        rb = this.GetComponent<Rigidbody>();
+    }
+
+    void FixedUpdate()
+    {
+        float xValue = Input.GetAxis("Horizontal") * moveSpeed;
+        float zValue = Input.GetAxis("Vertical") * moveSpeed;
+
+        rb.velocity = new Vector3(xValue, 0, zValue);
     }
 }
