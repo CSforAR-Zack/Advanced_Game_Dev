@@ -48,3 +48,14 @@ The following packages were added:
 The following packages were updated:
   com.unity.2d.animation from version 6.0.1 to 6.0.3
   com.unity.2d.psdimporter from version 5.0.1 to 5.0.3
+
+=== Wed Jul 14 11:07:04 2021
+
+Packages were changed.
+Update Mode: updateDependencies
+
+The following packages were updated:
+  com.unity.2d.animation from version 6.0.3 to 6.0.4
+  com.unity.2d.psdimporter from version 5.0.3 to 5.0.4
+  com.unity.2d.spriteshape from version 6.0.0 to 6.0.1
+  com.unity.test-framework from version 1.1.26 to 1.1.27
