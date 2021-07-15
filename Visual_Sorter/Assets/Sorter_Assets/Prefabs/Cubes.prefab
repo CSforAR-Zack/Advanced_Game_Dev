@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8791150752043570954
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8791150752043570948}
+  - component: {fileID: 8791150752043570949}
+  m_Layer: 0
+  m_Name: Cubes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8791150752043570948
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791150752043570954}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8791150752043570949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8791150752043570954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abce8f662275e3c4fa13c65c7ae6df60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberOfCubes: 10
+  cubeHeightMax: 10
+  speed: 1
+  cubePrefab: {fileID: 443188075689740463, guid: 03bd1de94c602cb4180ded033d311010, type: 3}
+  cubes: []
+  canvasPrefab: {fileID: 5575220524857125597, guid: bf62a1b193780f148b27f138b48561fe, type: 3}
+  materials:
+  - {fileID: 2100000, guid: 7c7c7bd6d76c3ba45a8cb9e92bde0336, type: 2}
+  - {fileID: 2100000, guid: 3aa88fb44a70d744297d7dcb5a10390a, type: 2}
+  - {fileID: 2100000, guid: 02040e09d781b3c4c80811c4e2f582ba, type: 2}
+  - {fileID: 2100000, guid: 2074c31268a01754b913c9c43b116193, type: 2}
+  - {fileID: 2100000, guid: 52b0a537fbb298f498495b936a4c02d5, type: 2}
