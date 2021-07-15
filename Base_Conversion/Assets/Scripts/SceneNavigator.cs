@@ -3,5 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneNavigator : MonoBehaviour
 {
-    // Hey! I am empty!
+    public void LoadTargetScene(int targetScene)
+    {
+        SceneManager.LoadScene(targetScene);
+    }
 }

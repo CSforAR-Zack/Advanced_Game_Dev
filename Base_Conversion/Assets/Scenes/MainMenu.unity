@@ -507,7 +507,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7101821865181682667}
         m_TargetAssemblyTypeName: SceneNavigator, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadTargetScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1025,7 +1025,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7101821865181682667}
         m_TargetAssemblyTypeName: SceneNavigator, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadTargetScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

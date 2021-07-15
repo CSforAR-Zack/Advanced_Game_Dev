@@ -1229,13 +1229,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 710071525}
   m_TextComponent: {fileID: 1562636980}
   m_Placeholder: {fileID: 1304461744}
-  m_ContentType: 4
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 1
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 3
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -4460,7 +4460,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 5556079077757476131}
         m_TargetAssemblyTypeName: SceneNavigator, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: LoadTargetScene
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4592,13 +4592,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5556079077540042009}
   m_TextComponent: {fileID: 5556079077516552854}
   m_Placeholder: {fileID: 5556079076845193724}
-  m_ContentType: 4
+  m_ContentType: 0
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 1
+  m_KeyboardType: 0
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 3
+  m_CharacterValidation: 0
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -4913,11 +4913,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 453091816ffad6945ac29bbdae61a7be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  num1Field: {fileID: 710071524}
-  num2Field: {fileID: 5556079077540042008}
-  operation: {fileID: 514616393}
-  num1ValueBase: {fileID: 1591957880}
-  num2ValueBase: {fileID: 5556079076312723558}
+  num1InputField: {fileID: 710071524}
+  num2InputField: {fileID: 5556079077540042008}
+  operatorSelect: {fileID: 514616393}
+  num1BaseSelect: {fileID: 1591957880}
+  num2BaseSelect: {fileID: 5556079076312723558}
   outputText: {fileID: 5556079077562449761}
 --- !u!224 &5556079078003720284
 RectTransform:
