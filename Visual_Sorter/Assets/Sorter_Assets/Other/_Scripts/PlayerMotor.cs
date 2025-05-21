@@ -9,8 +9,8 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField] Camera cam;
     [SerializeField] [Range(0,90f)] float cameraRotationLimit = 85f;
     [SerializeField] [Range(0,1f)] float maxSlopeNormal = .55f;
-    [SerializeField] PhysicMaterial walkableFriction;
-    [SerializeField] PhysicMaterial nonWalkableSlopeFriction;
+    [SerializeField] PhysicsMaterial walkableFriction;
+    [SerializeField] PhysicsMaterial nonWalkableSlopeFriction;
 
     // Private variables that motor works with
     private Vector3 velocity = Vector3.zero;
@@ -101,7 +101,7 @@ public class PlayerMotor : MonoBehaviour
                 if (!moveWhileJumping)
                 { 
                     // Zero out any X and Y RB velocity if on ground to avoid burst of speed.
-                    rb.velocity = new Vector3(0f,rb.velocity.y,0f);
+                    rb.linearVelocity = new Vector3(0f,rb.linearVelocity.y,0f);
                 }
                 rb.MovePosition(rb.position + velocity * Time.fixedDeltaTime);
             }
@@ -123,12 +123,12 @@ public class PlayerMotor : MonoBehaviour
                     // Have to store current velocity and zero velocity out so that movement and jump do not both apply an x and/or z velocity.
                     Vector3 currentVelocity = velocity;
                     velocity = Vector3.zero;
-                    rb.velocity = currentVelocity + jumpForce;
+                    rb.linearVelocity = currentVelocity + jumpForce;
                 }
                 else if (moveWhileJumping)
                 {
                     // Add jump (Y) velocity to RB. Movement will manage X and Z since moveWhileJumping is true.
-                    rb.velocity = jumpForce;
+                    rb.linearVelocity = jumpForce;
                 }
             }
         }
@@ -145,7 +145,7 @@ public class PlayerMotor : MonoBehaviour
             }
             else
             {
-                rb.velocity = new Vector3(0, swimForce.y, 0);
+                rb.linearVelocity = new Vector3(0, swimForce.y, 0);
             }
         }
         else
@@ -192,7 +192,7 @@ public class PlayerMotor : MonoBehaviour
     public void SetBuoyantForce(float value)
     {
         // Sets drag to mimic a buoyant force when Player is in water
-        rb.drag = value;
+        rb.linearDamping = value;
     }
 
     public void HeadAboveWaterCheck(bool value)
